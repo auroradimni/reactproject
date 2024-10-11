@@ -1,0 +1,24 @@
+@each $name, $fonts in $font-sizes {
+  .font-size-#{$name} {
+    @for $i from 1 through 10 {
+      &.dotdotdot-lines-#{$i} {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $i;
+        overflow: hidden;
+      }
+    }
+
+    @each $name, $font in $fonts {
+      @if breakpointValue($name) == null {
+        font-size: $font;
+      } @else {
+        @media screen and (max-width: breakpointValue($name)) {
+          @if $font != 'previous' {
+            font-size: $font;
+          }
+        }
+      }
+    }
+  }
+}

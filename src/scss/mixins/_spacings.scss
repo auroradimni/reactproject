@@ -1,0 +1,91 @@
+@each $name, $spacing in $spacings {
+  .mar-#{$name} {
+    @each $name, $space in $spacing {
+      @if breakpointValue($name) == null {
+        margin: $space;
+        &-t {
+          margin-top: $space;
+        }
+        &-b {
+          margin-bottom: $space;
+        }
+        &-r {
+          margin-right: $space;
+        }
+        &-l {
+          margin-left: $space;
+        }
+      } @else {
+        @media screen and (max-width: breakpointValue($name)) {
+          @if $space != 'previous' {
+            margin: $space;
+            &-t {
+              margin-top: $space;
+            }
+            &-b {
+              margin-bottom: $space;
+            }
+            &-r {
+              margin-right: $space;
+            }
+            &-l {
+              margin-left: $space;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pad-#{$name} {
+    @each $name, $space in $spacing {
+      @if breakpointValue($name) == null {
+        padding: $space;
+        &-t {
+          padding-top: $space;
+        }
+        &-b {
+          padding-bottom: $space;
+        }
+        &-r {
+          padding-right: $space;
+        }
+        &-l {
+          padding-left: $space;
+        }
+      } @else {
+        @media screen and (max-width: breakpointValue($name)) {
+          @if $space != 'previous' {
+            padding: $space;
+            &-t {
+              padding-top: $space;
+            }
+            &-b {
+              padding-bottom: $space;
+            }
+            &-r {
+              padding-right: $space;
+            }
+            &-l {
+              padding-left: $space;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .gap-#{$name} {
+    @each $name, $space in $spacing {
+      @if breakpointValue($name) == null {
+        gap: $space;
+      } @else {
+        @media screen and (max-width: breakpointValue($name)) {
+          @if $space != 'previous' {
+            gap: $space;
+          }
+        }
+      }
+    }
+  }
+}

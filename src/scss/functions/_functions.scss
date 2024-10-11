@@ -1,0 +1,9 @@
+@use 'sass:map';
+
+@function mapget($map, $key) {
+  @return map.get($map, $key);
+}
+
+@function breakpointValue($key, $gridBreakPoint: $break-points) {
+  @return mapget($gridBreakPoint, $key);
+}

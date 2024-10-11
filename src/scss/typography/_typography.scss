@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 100;
+  src: url('@/assets/fonts/Gilroy/Gilroy-UltraLight.ttf');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 100;
+  font-style: italic;
+  src: url('@/assets/fonts/Gilroy/Gilroy-UltraLightItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Gilroy'; //Light
+  font-weight: 200;
+  src: url('@/assets/fonts/Gilroy/Gilroy-Light.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'GilroyOtf'; //Light
+  font-weight: 200;
+  src: url('@/assets/fonts/Gilroy/Gilroy-Light.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Gilroy'; //Light
+  font-weight: 200;
+  font-style: italic;
+  src: url('@/assets/fonts/Gilroy/Gilroy-LightItalic.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Gilroy'; //Thin
+  font-weight: 300;
+  src: url('@/assets/fonts/Gilroy/Gilroy-Thin.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Gilroy'; //Thin
+  font-weight: 300;
+  font-style: italic;
+  src: url('@/assets/fonts/Gilroy/Gilroy-ThinItalic.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Gilroy'; //Medium
+  font-weight: 400;
+  src: url('@/assets/fonts/Gilroy/Gilroy-Medium.ttf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'Gilroy'; //Medium
+  font-weight: 400;
+  font-style: italic;
+  src: url('@/assets/fonts/Gilroy/Gilroy-MediumItalic.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Gilroy'; //Regular
+  font-weight: 500;
+  src: url('@/assets/fonts/Gilroy/Gilroy-Regular.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Gilroy'; //Regular
+  font-weight: 500;
+  font-style: italic;
+  src: url('@/assets/fonts/Gilroy/Gilroy-RegularItalic.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Gilroy'; //Semi-bold
+  font-weight: 600;
+  src: url('@/assets/fonts/Gilroy/Gilroy-SemiBold.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Gilroy'; //Semi-bold
+  font-weight: 600;
+  font-style: italic;
+  src: url('@/assets/fonts/Gilroy/Gilroy-SemiBoldItalic.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Gilroy'; //Bold
+  font-weight: 700;
+  src: url('@/assets/fonts/Gilroy/Gilroy-Bold.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Gilroy'; //Bold
+  font-weight: 700;
+  font-style: italic;
+  src: url('@/assets/fonts/Gilroy/Gilroy-BoldItalic.ttf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'Gilroy'; //ExtraBold
+  font-weight: 800;
+  src: url('@/assets/fonts/Gilroy/Gilroy-ExtraBold.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'GilroyOtf'; //ExtraBold
+  font-weight: 800;
+  src: url('@/assets/fonts/Gilroy/Gilroy-ExtraBold.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Gilroy'; //ExtraBold
+  font-weight: 800;
+  font-style: italic;
+  src: url('@/assets/fonts/Gilroy/Gilroy-ExtraBoldItalic.ttf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'Gilroy'; //Heavy
+  font-weight: 900;
+  src: url('@/assets/fonts/Gilroy/Gilroy-Heavy.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Gilroy'; //Heavy
+  font-weight: 900;
+  font-style: italic;
+  src: url('@/assets/fonts/Gilroy/Gilroy-HeavyItalic.ttf'); /* IE9 Compat Modes */
+}
+
+//Black Gilroy
+@font-face {
+  font-family: 'GilroyBlack'; //Black
+  font-weight: 500;
+  src: url('@/assets/fonts/Gilroy/Gilroy-Black.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'GilroyBlack'; //Black
+  font-weight: 500;
+  font-style: italic;
+  src: url('@/assets/fonts/Gilroy/Gilroy-BlackItalic.ttf'); /* IE9 Compat Modes */
+}
+
+//Radomir
+@font-face {
+  font-family: 'RadomirGilroy';
+  font-weight: 300;
+  src: url('@/assets/fonts/Gilroy/RadomirTinkov-Gilroy-Light.otf');
+}
+
+@font-face {
+  font-family: 'RadomirGilroy';
+  font-weight: 400;
+  src: url('@/assets/fonts/Gilroy/RadomirTinkov-Gilroy-Regular.otf');
+}
+
+@font-face {
+  font-family: 'RadomirGilroy';
+  font-weight: 600;
+  src: url('@/assets/fonts/Gilroy/RadomirTinkovGilroy-Bold.otf');
+}
+
+@font-face {
+  font-family: 'RadomirGilroy';
+  font-weight: 900;
+  src: url('@/assets/fonts/Gilroy/RadomirTinkov-Gilroy-ExtraBold.otf');
+}

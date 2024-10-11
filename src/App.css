@@ -1,0 +1,19 @@
+body {
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.avatar {
+  border-radius: 50%;
+}
+
+.navbar-nav {
+  max-width: 100%;
+  display: flex;
+  position: absolute;
+}
+.nav-item {
+  margin-right: 0%;
+  padding-right: 30%;
+}
