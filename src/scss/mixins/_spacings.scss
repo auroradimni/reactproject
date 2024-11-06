@@ -1,3 +1,4 @@
+@use "sass:map";
 @each $name, $spacing in $spacings {
   .mar-#{$name} {
     @each $name, $space in $spacing {
@@ -17,7 +18,7 @@
         }
       } @else {
         @media screen and (max-width: breakpointValue($name)) {
-          @if $space != 'previous' {
+          @if $space != "previous" {
             margin: $space;
             &-t {
               margin-top: $space;
@@ -55,7 +56,7 @@
         }
       } @else {
         @media screen and (max-width: breakpointValue($name)) {
-          @if $space != 'previous' {
+          @if $space != "previous" {
             padding: $space;
             &-t {
               padding-top: $space;
@@ -81,7 +82,7 @@
         gap: $space;
       } @else {
         @media screen and (max-width: breakpointValue($name)) {
-          @if $space != 'previous' {
+          @if $space != "previous" {
             gap: $space;
           }
         }
