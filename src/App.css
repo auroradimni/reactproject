@@ -2,31 +2,35 @@
 body {
   margin: 0;
   padding: 0px;
-  overflow-x: hidden;
   width: 100%;
   height: 100%;
+  overflow-y: auto !important;
 }
+
 body {
-  background-size: cover;
+  text-decoration: none;
+  background-size: auto;
   background-image: url("./assets/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  color: #065267;
-  overflow-x: hidden;
-  max-height: 400px;
   z-index: -1;
-  position: fixed;
+
+  color: rgba(1, 39, 1, 0.648);
+  overflow-y: scroll !important;
 }
 
 .navbar {
   width: 100%;
-  color: #065267;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 .navbar-nav {
   display: flex;
   width: 100%;
   justify-content: flex-end;
   align-items: center;
+  text-decoration: none;
 }
 .mobile-nav {
   display: none;
@@ -42,12 +46,89 @@ body {
 .humburger-button {
   display: none;
 }
+.nav-link {
+  text-decoration: none;
+  color: rgba(1, 39, 1, 0.881) !important;
+}
+.nav-link:hover {
+  color: #6b85a8 !important;
+}
+.card-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+  padding: 150px;
+  overflow: visible !important;
+}
+.card {
+  color: rgba(245, 250, 255, 0.808);
+  box-shadow: 5px 2px 5px #27361c;
+  padding: 20px;
+  width: 400px;
+  height: 340px;
+  background-color: rgba(1, 39, 1, 0.313);
+  border-radius: 3px;
+  text-align: center;
+  animation: popUp 2s ease forwards;
+  font-weight: bolder;
+}
+
+.card:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.card:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.card-holder-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+  padding: 100px;
+}
+.card-about {
+  color: rgba(245, 250, 255, 0.808);
+  box-shadow: 5px 2px 5px #27361c;
+  padding: 10px;
+  width: 900px;
+  height: auto;
+  background-color: rgba(1, 39, 1, 0.495);
+  border-radius: 3px;
+  text-align: center;
+  animation: popUp 2s ease forwards;
+  font-weight: bolder;
+}
+.card-button {
+  background-color: #1f95a2b6;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #187c88;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
 @media screen and (max-width: 576px) {
   .navbar-nav {
     display: none;
     height: 0;
   }
-
+  .nav-link {
+    text-decoration: none;
+    color: rgb(1, 39, 1) !important;
+  }
   .mobile-nav {
     display: flex;
     flex-direction: column;
@@ -88,8 +169,23 @@ body {
     position: fixed;
     height: 30px;
   }
+  body {
+    position: absolute;
+    overflow-y: auto;
+    background-size: cover;
+  }
+  .card-holder {
+    padding: 60px;
+  }
+  .card-holder-about {
+    padding: 30px;
+  }
 }
+
 @media screen and (min-width: 577px) {
+  body {
+    position: absolute;
+  }
   .navbar-nav {
     display: flex;
     height: 50px;
@@ -104,5 +200,69 @@ body {
   }
   .mobile-icon {
     display: none;
+  }
+}
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 985px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  .card-holder,
+  .card {
+    flex-wrap: wrap;
+  }
+  .card-holder-about,
+  .card-about {
+    flex-wrap: wrap;
+  }
+}
+
+.card-holder-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 100px;
+}
+
+.card-contact {
+  color: rgba(245, 250, 255, 0.808);
+  box-shadow: 5px 2px 5px #27361c;
+  padding: 20px;
+  width: 400px;
+  background-color: rgba(1, 39, 1, 0.313);
+  border-radius: 3px;
+  text-align: center;
+  animation: popUp 2s ease forwards;
+  font-weight: bolder;
+}
+
+.card-contact a {
+  color: #0e2603;
+  text-decoration: none;
+}
+
+.card-contact a:hover {
+  color: rgba(2, 63, 2, 0.571);
+}
+
+@media screen and (max-width: 768px) {
+  .card-holder-contact {
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  .card-contact {
+    width: 100%;
+    padding: 15px;
   }
 }

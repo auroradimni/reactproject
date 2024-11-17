@@ -11,6 +11,7 @@ import "./App.css";
 const App = () => {
   return (
     <>
+      <div className="background"></div>
       <Router className="router">
         <div>
           <Navbar />
